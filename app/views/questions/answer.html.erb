@@ -1,3 +1,12 @@
 <h1>The coach says...</h1>
-<p>Your question: <%= @question %></p>
-<p>The answer: <%= @answer %></p>
+<div class="question">
+  <%= @question %>
+  <p>-- You</p>
+</div>
+<div class="answer">
+  <%= @answer %>
+  <p>-- Your coach</p>
+</div>
+<div class="link">
+  <%= link_to "Ask a new question", ask_path %>
+</div>
